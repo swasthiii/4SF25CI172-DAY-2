@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swasthishree | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Swasthishree</h1>
+    <p>AIML Student & Yakshagana Artist</p>
+  </header>
+
+  <main>
+    <section class="profile">
+      <img src="profile pic.jpeg" alt="Profile photo of Swasthishree">
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a 2nd-year AIML engineering student passionate about software development, AI systems, and technology. Alongside coding, I am a dedicated Yakshagana artist, blending creative cultural performance with technical problem-solving.</p>
+    </section>
+
+    <section id="education-skills">
+      <h2>Education & Skills</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Education</h3>
+          <p><strong>College:</strong> Sahyadri College of Engineering and Management</p>
+          <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning (AIML)</p>
+          <p><strong>Year/Sem:</strong> 2nd Year (3rd Semester)</p>
+        </div>
+        <div>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>HTML5 & CSS3</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Vocational Training AR Platform Concept</h3>
+        <p>An interactive skill-learning platform concept featuring personalized feedback systems and performance tracking.</p>
+      </div>
+      <div class="project-card">
+        <h3>Faulty Calculator</h3>
+        <p>A JavaScript-based application built to test conditional logic and DOM manipulation.</p>
+      </div>
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>A single-page responsive website developed using clean HTML, CSS Flexbox, and Git version control.</p>
+      </div>
+    </section>
+
+    <section id="counter">
+      <h2>Planned Projects Counter</h2>
+      <div class="counter-box">
+        <button id="dec-btn">-</button>
+        <span id="counter-val">0</span>
+        <button id="inc-btn">+</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p><strong>Phone:</strong> <a href="tel:9972275819" class="phone-link">+91 9972275819</a></p>
+      <form onsubmit="event.preventDefault();" style="margin-top: 1rem;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="3" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section id="socials">
+      <h2>Connect with Me</h2>
+      <div class="links">
+        <a href="https://github.com/swasthiii" target="_blank">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/swasthishree-424190384" target="_blank">LinkedIn Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let count = 0;
+    const val = document.getElementById('counter-val');
+    document.getElementById('inc-btn').onclick = () => { count++; val.textContent = count; };
+    document.getElementById('dec-btn').onclick = () => { if(count > 0) count--; val.textContent = count; };
+  </script>
+
+</body>
+</html>
